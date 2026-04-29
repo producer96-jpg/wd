@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+    <title>Signup</title>
+</head>
+<body>
+    
+
+
+    <h3>SIGNUP</h3>
+ 
+  <form onsubmit="signup()" method="POST" action="signup.php">
+    <input type="text" id="1" name="name" placeholder="Enter Name"><br><br>
+    <input type="email" id="2" name="email" placeholder="Enter Email"><br><br>
+    <input type="password" id="3" name="password" placeholder="Enter Password"><br><br>
+
+    <button type="submit">Signup</button>
+    <a href="practiceLogin.html">Login</a>
+</form>
+
+<script>
+function signup() {
+    var name = document.getElementById("1").value;
+    var email = document.getElementById("2").value;
+    var password = document.getElementById("3").value;
+
+    if (name !== "" && email !== "" && password !== "") {
+        alert("Signup Successful ✅");
+        
+    } else {
+        alert("Please fill all fields ❌");
+    }
+}
+</script>
+
+</body>
+</html>
