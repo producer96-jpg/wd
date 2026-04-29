@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="employee.xsl"?>
+
+<employees>
+    <employee>
+        <name>Anil</name>
+        <id>201</id>
+        <dept>IT</dept>
+        <salaryPerDay>500</salaryPerDay>
+        <days>20</days>
+    </employee>
+
+    <employee>
+        <name>Neha</name>
+        <id>202</id>
+        <dept>HR</dept>
+        <salaryPerDay>600</salaryPerDay>
+        <days>22</days>
+    </employee>
+
+    <employee>
+        <name>Ravi</name>
+        <id>203</id>
+        <dept>Finance</dept>
+        <salaryPerDay>550</salaryPerDay>
+        <days>18</days>
+    </employee>
+
+    <employee>
+        <name>Pooja</name>
+        <id>204</id>
+        <dept>IT</dept>
+        <salaryPerDay>700</salaryPerDay>
+        <days>25</days>
+    </employee>
+</employees>

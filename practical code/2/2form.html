@@ -1,0 +1,77 @@
+<html>
+<head>
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function validateForm(){
+var name = document.myForm.name.value;
+var age = document.myForm.age.value;
+var email = document.myForm.email.value;
+var mobile = document.myForm.number.value;
+var password = document.myForm.pass.value;
+
+if(name == ""){
+alert("Enter your name");
+return false;
+}
+
+if(email == "" || email.indexOf("@") == -1){    
+alert("Enter valid email");
+return false;
+}
+
+if(age < 18 || age > 25){
+alert("Age must be between 18 to 25");
+return false;
+}
+
+
+if(mobile.length != 10){
+alert("Enter 10 digit mobile number");
+return false;
+}
+
+if(password.length < 6){
+alert("Password must be at least 6 characters");
+return false;
+}
+
+return true;
+}
+</script>
+
+</head>
+<body>
+<h2>Student Form</h2>
+<form name="myForm" onsubmit="return validateForm()">
+Name: <input type="text" name="name"><br>
+Address: <input type="text" name="address"><br>
+Date of Birth: <input type="date" name="date"><br>
+Age: <input type="number" name="age"><br>
+Email: <input type="text" name="email"><br>
+Mobile: <input type="tel" name="number"><br>
+Password: <input type="password" name="pass"><br>
+Gender:<br>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female<br>
+
+<label>Department:</label>
+<select name="dep">
+<option>Comp</option>
+<option>IT</option>
+<option>Mech</option>
+</select><br><br>
+
+<label>Division:</label>
+<select name="div">
+<option>A</option>
+<option>B</option>
+<option>C</option>
+</select><br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+
+</form>
+</body>
+</html>

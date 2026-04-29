@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>Student Form</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function validateForm() {
+
+    var name = document.forms["myForm"]["name"].value;
+    var age = document.forms["myForm"]["age"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var mobile = document.forms["myForm"]["number"].value;
+    var password = document.forms["myForm"]["pass"].value;
+
+     if (name === "") {
+        alert("Name should not be empty");
+        return false;
+    }
+
+    if (email == "" || email.indexOf("@") == -1) {
+        alert("Enter valid email");
+        return false;
+    }
+
+    if (age < 18 || age > 25) {
+        alert("Age must be between 18 to 25");
+        return false;
+    }
+
+    if (mobile.length != 10 || isNaN(mobile)) {
+        alert("Enter valid 10 digit mobile number");
+        return false;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters");
+        return false;
+    }
+
+    return true;
+}
+</script>
+</head>
+<body>
+<h1>Student Form</h1>
+<form name="myForm" onsubmit="return validateForm()"
+     action="form.php" method="post">
+Name: <input type="text" name="name" required><br>
+Age: <input type="number" name="age"><br>
+Date of Birth: <input type="date" name="dob"><br>
+Mobile: <input type="text" name="number"><br>
+Gender:
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<br><br>
+Address: <input type="text" name="add"><br>
+Email: <input type="text" name="email"><br>
+Password: <input type="password" name="pass"><br>
+
+<label>Branch:</label>
+<select name="branch">
+<option>comp</option>
+<option>aids</option>
+<option>it</option>
+</select>
+<br><br>
+
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>

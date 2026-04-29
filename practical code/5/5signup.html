@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>SIGNUP</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+function validateForm() {
+    var name = document.myForm.name.value;
+    var email = document.myForm.email.value;
+    var password = document.myForm.password.value;
+    var confirm = document.myForm.confirm.value;
+    if (name == "") {
+        alert("Enter full name");
+        return false;
+    }
+    if (email == "" || email.indexOf("@") == -1) {
+        alert("Enter valid email");
+        return false;
+    }
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters");
+        return false;
+    }
+    if (password != confirm) {
+        alert("Passwords do not match");
+        return false;
+    }
+    return true;
+}
+</script>
+
+</head>
+
+<body>
+<nav>
+<a href="5home.html">HOME</a> |
+<a href="5signup.html">SIGNUP</a> |
+<a href="5login.html">LOGIN</a> |
+</nav>
+
+<section>
+<h2>Create Account</h2>
+
+<form name="myForm" onsubmit="return validateForm()">
+<input type="text" name="name" placeholder="full name"><br>
+<input type="text" name="email" placeholder="email id"><br>
+<input type="password" name="password" placeholder="password"><br>
+<input type="password" name="confirm" placeholder="confirm password"><br>
+<button type="submit">SUBMIT</button><br>
+</form>
+
+</section>
+</body>
+</html>

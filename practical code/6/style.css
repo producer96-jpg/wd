@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+nav {
+    background-color: #131921;
+    padding: 10px;
+    text-align: center ;
+}
+
+nav a {
+    color:orangered;
+    margin: 20px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section {
+    background-color: orangered;
+    margin: 30px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+input {
+    width: 200px;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: yellowgreen;
+    border: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgb(170, 170, 244);
+}
+
+

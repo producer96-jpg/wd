@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="students.xsl"?>
+
+<students>
+    <student>
+        <name>Anushka</name>
+        <roll>101</roll>
+        <marks>75</marks>
+    </student>
+    <student>
+        <name>gauri</name>
+        <roll>102</roll>
+        <marks>40</marks>
+    </student>
+    <student>
+        <name>aditya</name>
+        <roll>103</roll>
+        <marks>85</marks>
+    </student>
+    <student>
+        <name>pakhi</name>
+        <roll>104</roll>
+        <marks>30</marks>
+    </student>
+</students>
